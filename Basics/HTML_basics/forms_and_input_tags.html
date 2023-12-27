@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h2>HTML form</h2>
+
+    <form action="backend.php">
+      <!-- text block -->
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="myName" id="name" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email:</label>
+        <input type="text" name="myEmail" id="email" />
+      </div>
+
+      <!-- Date -->
+      <br />
+      <div>
+        <label for="date">Date: </label>
+        <input type="date" name="myDate" id="date" />
+      </div>
+
+      <!-- number only -->
+      <br />
+      <div>
+        <label for="bonus">Bonus: </label>
+        <input type="number" name="myBonus" id="bonus" />
+      </div>
+
+      <!-- checkbox -->
+      <br />
+      <div>
+        <label for="eligibility">Are you eligible? </label>
+        <input type="checkbox" name="myEligibility" id="eligibility" />
+      </div>
+
+      <!-- radio: to select only one option out of many -->
+      <br />
+      <div>
+        <label for="gender">Gender: </label>
+        Male <input type="radio" name="myGender" id="gender" /> Female
+        <input type="radio" name="myGender" id="gender" />
+      </div>
+
+      <!-- text area, to get paragraphs from user -->
+      <br />
+      <div>
+        <label for="descrip">Tell us your experience: </label>
+        <br />
+        <textarea
+          name="myDescription"
+          id="descrip"
+          cols="50"
+          rows="5"
+        ></textarea>
+      </div>
+
+      <!-- select tag -->
+      <br />
+      <div>
+        <label for="car">Car: </label>
+        <select name="myCar" id="car">
+          <option value="Cel">Celtos</option>
+          <option value="Swi">Swift</option>
+          <option value="Rit" selected>Ritz</option>
+          <!-- by default Ritz is selected -->
+        </select>
+      </div>
+
+      <!-- form data is submitted to the server specified in the form's action by the following -->
+      <br />
+      <div>
+        <input type="submit" value="Submit Here" />
+        <input type="reset" value="reset" />
+      </div>
+    </form>
+  </body>
+</html>
