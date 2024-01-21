@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Internal CSS  -->
+    <!-- priority given to inline css first-->
+    <!-- to give priority to any of the attributes below, type '!important' -->
+    <!-- that will never allow that attribute to be overridden -->
+    <style>
+      p {
+        color: lightblue;
+        background-color: darkgoldenrod !important;
+      }
+    </style>
+    <!-- External CSS  -->
+    <!-- between external and internal,priority given to the one which precedes all -->
+    <link rel="stylesheet" href="a1_css_basic.css" />
+  </head>
+
+  <body>
+    <h2>CSS basics</h2>
+    <h4>We will check inline,internal and external css</h4>
+
+    <!-- Inline CSS -->
+    <!-- <p style="color: blue; background-color: yellowgreen">
+      You will be inlaid upon the staue
+    </p> -->
+    <p>you will not be inlaid upon the statue</p>
+  </body>
+</html>
