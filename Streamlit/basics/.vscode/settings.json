@@ -1,0 +1,5 @@
+{
+  "python.analysis.completeFunctionParens": true,
+  "editor.autoClosingBrackets": "always",
+  "C_Cpp.autocompleteAddParentheses": true
+}
