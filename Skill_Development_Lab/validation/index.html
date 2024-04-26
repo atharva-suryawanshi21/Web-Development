@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Validation</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to our website</h1>
+    <form onsubmit="return validateform()">
+      <div>
+        <label for="firstname"> First Name: </label>
+        <input type="text" id="firstname" required />
+        <span class="error" id="firstname_error"></span>
+      </div>
+      <br />
+      <div>
+        <label for="lastname"> Last Name: </label>
+        <input type="text" id="lastname" required />
+        <span class="error" id="lastname_error"></span>
+      </div>
+      <br />
+      <div>
+        <label for="email"> Email: </label>
+        <input type="text" id="email" onblur="validate_email()" />
+        <span class="error" id="email_error"></span>
+      </div>
+      <br />
+      <div>
+        <label for="password">Password : </label>
+        <input type="text" id="password" />
+        <span class="error" id="password_error"></span>
+      </div>
+      <br />
+      <div>
+        <label for="confirmpassword"> Confirm Password: </label>
+        <input type="text" id="confirmpassword" />
+        <span class="error" id="confirmpassword_error"></span>
+      </div>
+      <br />
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
