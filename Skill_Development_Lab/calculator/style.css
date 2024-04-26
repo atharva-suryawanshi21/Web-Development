@@ -1,0 +1,12 @@
+button.operator {
+  color: black;
+  background-color: lightblue;
+}
+button.number {
+  color: black;
+  background-color: lightgreen;
+}
+button.dot {
+  color: black;
+  background-color: pink;
+}

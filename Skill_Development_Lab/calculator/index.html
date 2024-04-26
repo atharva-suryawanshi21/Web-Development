@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="text" id="display" readonly />
+    <div>
+      <button onclick="calculate_exp()">=</button>
+      <button onclick="clear_screen()">C</button><br />
+      <button class="number" onclick="push_element('7')">7</button>
+      <button class="number" onclick="push_element('8')">8</button>
+      <button class="number" onclick="push_element('9')">9</button><br />
+      <button class="number" onclick="push_element('4')">4</button>
+      <button class="number" onclick="push_element('5')">5</button>
+      <button class="number" onclick="push_element('6')">6</button><br />
+      <button class="number" onclick="push_element('1')">1</button>
+      <button class="number" nclick="push_element('2')">2</button>
+      <button class="number" onclick="push_element('3')">3</button><br />
+      <button class="number" onclick="push_element('0')">0</button>
+      <button class="dot" onclick="push_element('.')">.</button><br />
+      <button class="operator" onclick="push_element('+')">+</button>
+      <button class="operator" onclick="push_element('-')">-</button>
+      <button class="operator" onclick="push_element('*')">*</button>
+      <button class="operator" onclick="push_element('/')">/</button><br />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
